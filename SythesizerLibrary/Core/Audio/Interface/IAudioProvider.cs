@@ -1,9 +1,14 @@
 namespace SynthesizerLibrary.Core.Audio.Interface 
 {
  
-    internal interface IAudioProvider
+    public interface IAudioProvider
     {
-        
+        bool NeedTraverse { get; }
+        int Channels { get; }
+        int SampleRate { get; }
+
+        int TotalWriteTime { get; }
+
     }
     
 }
