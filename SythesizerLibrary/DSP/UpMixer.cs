@@ -8,7 +8,7 @@ using SythesizerLibrary.Core.Audio;
 
 namespace SythesizerLibrary.DSP
 {
-    public class UpMixer : Node
+    public class UpMixer : AudioNode
     {
         public UpMixer(IAudioProvider provider, int numberOfInputs, int numberOfOutputs, Action? generate = null) : base(provider, numberOfInputs, numberOfOutputs, generate)
         {
